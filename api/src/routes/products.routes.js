@@ -13,4 +13,8 @@ const productController = require('../controllers/product.controller');
 // Criação de um 'Product': (POST): localhost:3000/api/products
 router.post('/products', productController.createProduct)
 
+// Listagem de todos os 'Products': (GET): localhost:3000/api/products
+router.get('/products', productController.listAllProducts)
+
+
 module.exports = router;
