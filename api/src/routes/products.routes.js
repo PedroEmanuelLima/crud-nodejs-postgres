@@ -16,8 +16,10 @@ router.post('/products', productController.createProduct)
 // Listagem de todos os 'Products': (GET): localhost:3000/api/products
 router.get('/products', productController.listAllProducts)
 
-// => Selecionar determinado 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id
+// Selecionar determinado 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id
 router.get('/products/:id', productController.findProductById);
 
+// Atualizar 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id
+router.put('/products/:id', productController.updateProductById);
 
 module.exports = router;
