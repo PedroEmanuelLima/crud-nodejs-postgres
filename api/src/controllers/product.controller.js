@@ -48,3 +48,11 @@ exports.updateProductById = async (req, res) => {
 
     res.status(200).send({ message: "Product Updated Successfully!" });
 };
+
+// ==> Método responsável por deletar 'Product' pelo 'Id'
+exports.deleteProductById = async (req, res) => {
+    const productId = parseInt(req.params.id);
+    await db.query('DELETE FROM products WHERE productId = $1', [productId]);
+
+    res.status(200).send({ message: 'Product deleted successfully!', productId });
+};

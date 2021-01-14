@@ -22,4 +22,8 @@ router.get('/products/:id', productController.findProductById);
 // Atualizar 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id
 router.put('/products/:id', productController.updateProductById);
 
+// Excluir 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id
+router.delete('/products/:id', productController.deleteProductById);
+
+
 module.exports = router;
