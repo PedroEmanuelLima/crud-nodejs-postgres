@@ -1,0 +1,12 @@
+build/
+# Commonlyy ignore Node.js files
+node_modules/
+npm-debug.log
+.npm
+
+#OSX system files, te bane of our existence
+.DS_Store
+.AppleDoule
+.LSOverride
+
+.env
